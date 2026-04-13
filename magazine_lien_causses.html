@@ -832,6 +832,188 @@
     margin-bottom: 2px;
   }
 
+  /* ══════════════════════════════════════════
+     THÈMES QUESTIONS
+  ══════════════════════════════════════════ */
+  .questions-theme-label {
+    font-family: 'Crimson Pro', serif;
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--or-clair);
+    background: rgba(255,255,255,0.12);
+    padding: 4px 10px;
+    display: inline-block;
+    margin: 10px 0 4px;
+    border-left: 2px solid var(--or);
+  }
+
+  /* ══════════════════════════════════════════
+     TÉMOIGNAGE
+  ══════════════════════════════════════════ */
+  .temoignage-item {
+    background: rgba(255,255,255,0.06);
+    border-left: 3px solid var(--or-clair);
+    padding: 12px 14px;
+    margin-top: 8px;
+  }
+
+  .temoignage-texte {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 14.5px;
+    color: rgba(255,255,255,0.92);
+    line-height: 1.65;
+    margin-bottom: 6px;
+  }
+
+  .temoignage-auteur {
+    font-family: 'Crimson Pro', serif;
+    font-size: 12px;
+    color: var(--or-clair);
+    text-align: right;
+  }
+
+  /* ══════════════════════════════════════════
+     AGENDA
+  ══════════════════════════════════════════ */
+  .agenda-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 10px;
+  }
+
+  .agenda-col {}
+
+  .agenda-semaine-label {
+    font-family: 'Crimson Pro', serif;
+    font-size: 9.5px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--or);
+    background: var(--pourpre);
+    padding: 3px 10px;
+    display: inline-block;
+    margin-bottom: 7px;
+  }
+
+  .agenda-ligne {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    padding: 4px 0;
+    border-bottom: 1px dotted var(--creme-fonce);
+  }
+
+  .agenda-ligne:last-child { border-bottom: none; }
+
+  .agenda-jour {
+    font-family: 'Crimson Pro', serif;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: var(--pourpre);
+    min-width: 82px;
+    flex-shrink: 0;
+  }
+
+  .agenda-heure {
+    font-family: 'Crimson Pro', serif;
+    font-size: 11px;
+    color: var(--or);
+    min-width: 40px;
+    flex-shrink: 0;
+    font-style: italic;
+  }
+
+  .agenda-desc {
+    font-family: 'Crimson Pro', serif;
+    font-size: 12.5px;
+    color: #4A3828;
+    line-height: 1.4;
+  }
+
+  /* ══════════════════════════════════════════
+     PRIÈRE
+  ══════════════════════════════════════════ */
+  .priere-box {
+    background: var(--pourpre);
+    padding: 28px 36px;
+    position: relative;
+    text-align: center;
+  }
+
+  .priere-croix {
+    font-size: 20px;
+    color: var(--or);
+    margin-bottom: 14px;
+  }
+
+  .priere-texte {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 2;
+    color: rgba(255,255,255,0.95);
+    letter-spacing: 0.2px;
+  }
+
+  .priere-auteur {
+    margin-top: 16px;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 13px;
+    color: var(--or-clair);
+  }
+
+  /* ══════════════════════════════════════════
+     VERSET BIBLIQUE
+  ══════════════════════════════════════════ */
+  .verset-box {
+    background: var(--creme-fonce);
+    border: 1px solid var(--or);
+    border-left: 5px solid var(--or);
+    padding: 22px 28px 20px;
+    position: relative;
+  }
+
+  .verset-guillemet {
+    font-family: 'Playfair Display', serif;
+    font-size: 72px;
+    color: var(--or);
+    line-height: 0.6;
+    margin-bottom: 10px;
+    opacity: 0.5;
+  }
+
+  .verset-texte {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 1.8;
+    color: var(--gris-texte);
+    margin-bottom: 10px;
+  }
+
+  .verset-ref {
+    font-family: 'Crimson Pro', serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--pourpre);
+    text-align: right;
+    margin-bottom: 14px;
+  }
+
+  .verset-meditation {
+    font-family: 'Crimson Pro', serif;
+    font-style: italic;
+    font-size: 13px;
+    line-height: 1.65;
+    color: #5A4030;
+    border-top: 1px solid var(--or);
+    padding-top: 10px;
+  }
+
   /* Footer commun */
   .page-footer {
     background: var(--pourpre);
@@ -1306,93 +1488,66 @@
 <!-- ════════════════════════════════════════
      PAGE 4 : BOÎTE À QUESTIONS + ABONNEMENT
 ════════════════════════════════════════ -->
-<div class="page-label">PAGE 4 — BOÎTE À QUESTIONS &amp; ABONNEMENT</div>
+<div class="page-label">PAGE 4 — BOÎTE À QUESTIONS — NUMÉRO 1 · AVRIL 2026</div>
 <div class="page inner-page">
   <div class="inner-header">
     <div class="inner-header-logo">Le Lien des Causses</div>
-    <div class="inner-header-info">N° 1 · Mai 2025</div>
+    <div class="inner-header-info">N° 1 · Avril 2026</div>
   </div>
 
   <div class="inner-content">
 
-    <!-- BOÎTE À QUESTIONS -->
+    <!-- BOÎTE À QUESTIONS AVRIL 2026 -->
     <div class="questions-box">
       <div class="questions-title">La Boîte à Questions du Père Philippe</div>
-      <div class="questions-subtitle">Chaque mois, le Père Philippe répond à vos vraies questions, sans filtre et avec le cœur ouvert.</div>
+      <div class="questions-subtitle">Journal paroissial – Numéro 1 – Avril 2026 · Chaque mois, le Père Philippe répond à vos vraies questions, avec le cœur ouvert.</div>
 
+      <div class="questions-theme-label">La Question du Mois</div>
       <div class="question-item">
-        <div class="question-q">« Père Philippe, pourquoi va-t-on à la messe le dimanche et pas un autre jour ? »</div>
-        <div class="question-r">Le dimanche est le «&nbsp;premier jour&nbsp;» de la semaine chrétienne car c'est le jour de la Résurrection du Christ. Pour les premiers chrétiens, se réunir ce jour-là était une façon de «&nbsp;vivre le matin de Pâques&nbsp;» chaque semaine. Ce n'est pas une obligation froide, c'est une invitation à retrouver ensemble la source de notre joie.</div>
-        <div class="question-attribution">— Marie-France, Onet-le-Château</div>
+        <div class="question-q">« Comment concilier ma foi et mon travail, quand je me sens tiraillé entre mes valeurs et les exigences professionnelles ? »</div>
+        <div class="question-r">Cette tension est une réalité pour beaucoup. Jésus lui-même a vécu dans le monde, parmi les artisans et les marchands. Il nous invite à être <em>«&nbsp;sel de la terre et lumière du monde&nbsp;»</em> (Mt 5,13-14). Cela ne signifie pas fuir le monde, mais y agir avec intégrité, humilité et charité. Peut-être pouvez-vous commencer par de petites actions&nbsp;: une parole bienveillante, un refus poli de participer à une injustice, ou un temps de prière avant une réunion difficile. La foi ne se vit pas à côté du travail, mais en son cœur.</div>
       </div>
 
+      <div class="questions-theme-label">Foi et Vie Quotidienne</div>
       <div class="question-item">
-        <div class="question-q">« Comment prier quand on ne sait pas quoi dire ? »</div>
-        <div class="question-r">Commencez par le silence. La prière n'est pas d'abord une liste de mots — c'est un regard posé sur Dieu. Saint Jean Vianney racontait qu'un vieux paysan restait des heures assis dans l'église. Il lui demanda ce qu'il faisait. «&nbsp;Je le regarde, et il me regarde.&nbsp;» Voilà la prière. Soyez présents. Le reste vient.</div>
-        <div class="question-attribution">— Question anonyme</div>
+        <div class="question-q">« Je me sens souvent découragé dans ma prière. Que faire ? »</div>
+        <div class="question-r">La prière est un dialogue, pas une performance. Même les saints ont connu des périodes de sécheresse. L'important est la persévérance, même avec des mots simples ou en silence. Essayez de varier les formes de prière&nbsp;: lecture méditée de l'Évangile, chants, marche en nature… Et souvenez-vous&nbsp;: Dieu écoute aussi nos silences.</div>
       </div>
 
-      <div class="posez-question">
-        <div>
-          <div class="posez-text">📬 Posez votre question pour le prochain numéro</div>
-          <div class="posez-adresse">Boîte aux lettres de la sacristie · ou par email : contact@paroisse-sainte-emilie-causses.fr</div>
-        </div>
-        <div style="font-family:'Playfair Display',serif; font-size:13px; color:var(--pourpre); font-style:italic; text-align:right; max-width:180px;">Toutes les questions<br>méritent une réponse.</div>
-      </div>
-    </div>
-
-    <div class="ornement">
-      <div class="ornement-line"></div>
-      <div class="ornement-symbol">✠</div>
-      <div class="ornement-line"></div>
-    </div>
-
-    <!-- ABONNEMENT -->
-    <div class="abonnement-section">
-      <div class="abonnement-grid">
-        <div>
-          <div class="abonnement-col-title">📱 Version numérique — Gratuite</div>
-          <div class="abonnement-texte">
-            Téléchargez chaque mois <em>Le Lien des Causses</em> en PDF depuis notre site web ou recevez-le directement par email en vous inscrivant à la newsletter paroissiale.<br><br>
-            <strong>site :</strong> paroisse-sainte-emilie-causses.fr<br>
-            <strong>email :</strong> contact@paroisse-sainte-emilie-causses.fr<br><br>
-            Le magazine est également disponible à l'entrée de l'église chaque premier dimanche du mois.
-          </div>
-        </div>
-        <div>
-          <div class="abonnement-col-title">✉️ Version papier — Abonnement postal</div>
-          <div class="abonnement-texte">
-            Recevez <em>Le Lien des Causses</em> directement dans votre boîte aux lettres chaque mois. L'abonnement couvre uniquement les frais d'impression et d'envoi.
-          </div>
-          <div class="abonnement-prix">15 € <span>/ an · 10 numéros</span></div>
-          <div class="abonnement-texte">Chèque à l'ordre de : <strong>Paroisse Ste Émilie des Causses</strong><br>À retourner avec le coupon ci-dessous.</div>
-        </div>
+      <div class="questions-theme-label">Éclairages Bibliques</div>
+      <div class="question-item">
+        <div class="question-q">« Pourquoi Jésus parle-t-il en paraboles ? »</div>
+        <div class="question-r">Les paraboles sont des histoires qui <em>«&nbsp;dérangent&nbsp;»</em> et font réfléchir. Jésus les utilise pour toucher le cœur, pas seulement l'intellect. Elles révèlent le Royaume de Dieu à ceux qui sont ouverts, tout en restant mystérieuses pour ceux qui refusent de croire (cf. Mc 4,10-12). Chaque parabole est une invitation à se questionner&nbsp;: <em>«&nbsp;Et moi, où en suis-je&nbsp;?&nbsp;»</em></div>
       </div>
 
-      <div class="coupon">
-        <div class="coupon-title">✂ — Coupon d'abonnement postal — ✂</div>
-        <div class="coupon-fields">
-          <div class="coupon-field">
-            <div class="coupon-field-label">Nom &amp; Prénom</div>
-            &nbsp;
-          </div>
-          <div class="coupon-field">
-            <div class="coupon-field-label">Téléphone</div>
-            &nbsp;
-          </div>
-          <div class="coupon-field" style="grid-column: 1 / -1;">
-            <div class="coupon-field-label">Adresse postale complète</div>
-            &nbsp;
-          </div>
-          <div class="coupon-field" style="grid-column: 1 / -1;">
-            <div class="coupon-field-label">Email (pour accusé de réception)</div>
-            &nbsp;
-          </div>
-        </div>
-        <div style="margin-top:12px; font-family:'Crimson Pro',serif; font-size:11.5px; color:#6A5840; text-align:center;">
-          À déposer à la sacristie ou envoyer à : Paroisse Sainte Émilie des Causses · Presbytère · Onet-le-Château (12850)<br>
-          <em>Règlement par chèque joint de 15 € à l'ordre de « Paroisse Ste Émilie des Causses »</em>
-        </div>
+      <div class="questions-theme-label">Sacrements et Célébrations</div>
+      <div class="question-item">
+        <div class="question-q">« Pourquoi se confesser si Dieu nous pardonne déjà ? »</div>
+        <div class="question-r">Le sacrement de réconciliation est un cadeau&nbsp;: il nous permet d'entendre les paroles du pardon, de recevoir la grâce de Dieu et de nous réconcilier avec l'Église. C'est comme un <em>«&nbsp;redémarrage&nbsp;»</em> spirituel, une rencontre personnelle avec la miséricorde de Dieu.</div>
+      </div>
+
+      <div class="questions-theme-label">Questions de Société</div>
+      <div class="question-item">
+        <div class="question-q">« Que dit l'Église sur l'écologie ? »</div>
+        <div class="question-r">Depuis <em>Laudato Si'</em> du pape François, l'Église nous appelle à une <em>«&nbsp;conversion écologique&nbsp;»</em>. Prendre soin de la création, c'est respecter le don de Dieu et penser aux générations futures. Des gestes concrets — tri, économie d'énergie, consommation responsable — sont des moyens de vivre notre foi au quotidien.</div>
+      </div>
+
+      <div class="questions-theme-label">Le Coin des Enfants</div>
+      <div class="question-item" style="background:rgba(232,201,122,0.1); border-left:3px solid var(--or-clair);">
+        <div class="question-q">« Pourquoi on fait le signe de croix ? »</div>
+        <div class="question-r">Le signe de croix, c'est comme une petite prière avec tout notre corps&nbsp;! On touche notre front, notre cœur et nos épaules en disant <em>«&nbsp;Au nom du Père, du Fils et du Saint-Esprit&nbsp;»</em>. Cela nous rappelle que Dieu est avec nous partout, et que nous sommes ses enfants bien-aimés.</div>
+      </div>
+
+      <div class="questions-theme-label">Témoignages et Partages</div>
+      <div class="temoignage-item">
+        <div class="temoignage-texte">«&nbsp;Après la perte de mon emploi, j'ai trouvé du réconfort dans la prière et l'aide de la paroisse. Merci à tous pour votre soutien.&nbsp;»</div>
+        <div class="temoignage-auteur">— Sophie, 45 ans</div>
+      </div>
+
+      <div class="posez-question" style="flex-direction:column; align-items:flex-start; gap:8px;">
+        <div class="posez-text">✍️ À Vous la Parole !</div>
+        <div style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:14px; color:var(--brun);">«&nbsp;Et vous, comment vivez-vous votre foi au travail&nbsp;?&nbsp;» — Envoyez vos réponses ou nouvelles questions pour le prochain numéro&nbsp;!</div>
+        <div class="posez-adresse">📬 Boîte aux lettres de la sacristie · contact@paroisse-sainte-emilie-causses.fr</div>
       </div>
     </div>
 
@@ -1407,6 +1562,135 @@
 
 
 <!-- ════════════════════════════════════════
+     PAGE 5 : AGENDA + PRIÈRE + VERSET
+════════════════════════════════════════ -->
+<div class="page-label">PAGE 5 — AGENDA · PRIÈRE · VERSET DU MOIS</div>
+<div class="page inner-page">
+  <div class="inner-header">
+    <div class="inner-header-logo">Le Lien des Causses</div>
+    <div class="inner-header-info">N° 1 · Avril 2026</div>
+  </div>
+
+  <div class="inner-content">
+
+    <!-- AGENDA -->
+    <div class="section-heading">Agenda Paroissial — Avril 2026</div>
+    <div class="agenda-grid">
+      <div class="agenda-col">
+        <div class="agenda-semaine-label">Semaine du 6 au 12 avril</div>
+        <div class="agenda-ligne"><span class="agenda-jour">Dimanche 6</span><span class="agenda-heure">10h30</span><span class="agenda-desc">Messe dominicale — Distribution du <em>Lien</em></span></div>
+        <div class="agenda-ligne"><span class="agenda-jour">Jeudi 10</span><span class="agenda-heure">9h00</span><span class="agenda-desc">Adoration — Chapelle</span></div>
+        <div class="agenda-ligne"><span class="agenda-jour">Vendredi 11</span><span class="agenda-heure">18h30</span><span class="agenda-desc">Messe du soir — Église Ste Émilie</span></div>
+
+        <div class="agenda-semaine-label" style="margin-top:14px;">Semaine du 13 au 19 avril</div>
+        <div class="agenda-ligne"><span class="agenda-jour">Lundi 14</span><span class="agenda-heure">20h30</span><span class="agenda-desc">Préparation au mariage — Salle paroissiale</span></div>
+        <div class="agenda-ligne"><span class="agenda-jour">Jeudi 17</span><span class="agenda-heure">9h00</span><span class="agenda-desc">Adoration — Chapelle</span></div>
+        <div class="agenda-ligne"><span class="agenda-jour">Samedi 19</span><span class="agenda-heure">14h00</span><span class="agenda-desc">Aumônerie Jeunes — Salle paroissiale</span></div>
+        <div class="agenda-ligne"><span class="agenda-jour">Dimanche 20</span><span class="agenda-heure">10h30</span><span class="agenda-desc">Messe — Intention des familles</span></div>
+      </div>
+      <div class="agenda-col">
+        <div class="agenda-semaine-label">Semaine du 20 au 26 avril</div>
+        <div class="agenda-ligne"><span class="agenda-jour">Jeudi 24</span><span class="agenda-heure">9h00</span><span class="agenda-desc">Adoration — Chapelle</span></div>
+        <div class="agenda-ligne"><span class="agenda-jour">Vendredi 25</span><span class="agenda-heure">18h30</span><span class="agenda-desc">Messe + Chemin de Deuil</span></div>
+        <div class="agenda-ligne"><span class="agenda-jour">Dimanche 27</span><span class="agenda-heure">10h30</span><span class="agenda-desc">Messe — Préparation baptêmes</span></div>
+
+        <div class="agenda-semaine-label" style="margin-top:14px;">Fin de mois · 28–30 avril</div>
+        <div class="agenda-ligne"><span class="agenda-jour">Mardi 29</span><span class="agenda-heure">9h00</span><span class="agenda-desc">Rencontre Chemin de Vie</span></div>
+        <div class="agenda-ligne"><span class="agenda-jour">Mercredi 30</span><span class="agenda-heure">20h00</span><span class="agenda-desc">Veillée mariale — Église</span></div>
+
+        <div style="margin-top:14px; padding:10px 12px; background:var(--creme-fonce); border-left:3px solid var(--pourpre);">
+          <div style="font-family:'Crimson Pro',serif; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:var(--pourpre); margin-bottom:4px;">Intentions de messes</div>
+          <div style="font-family:'Crimson Pro',serif; font-size:12.5px; color:#4A3828; line-height:1.6;">Pour faire dire une messe pour vos intentions ou pour un défunt, contactez l'accueil paroissial. Participation libre.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ornement">
+      <div class="ornement-line"></div>
+      <div class="ornement-symbol">✠</div>
+      <div class="ornement-line"></div>
+    </div>
+
+    <!-- PRIÈRE DU MOIS -->
+    <div class="section-heading">Prière du Mois</div>
+    <div class="priere-box">
+      <div class="priere-croix">✠</div>
+      <div class="priere-texte">
+        «&nbsp;Seigneur, donne-nous la force de vivre notre foi chaque jour,<br>
+        dans nos familles, dans notre travail, dans nos rencontres.<br>
+        Que nos actes soient lumière pour ceux qui cherchent,<br>
+        et que ton amour guide chacun de nos pas.<br>
+        Aide-nous à être sel de la terre et lumière du monde,<br>
+        comme tu nous y invites avec tendresse.<br>
+        Amen.&nbsp;»
+      </div>
+      <div class="priere-auteur">— Père Philippe Arnal</div>
+    </div>
+
+    <div class="ornement">
+      <div class="ornement-line"></div>
+      <div class="ornement-symbol">✠</div>
+      <div class="ornement-line"></div>
+    </div>
+
+    <!-- VERSET BIBLIQUE -->
+    <div class="section-heading">Verset à Méditer — Avril 2026</div>
+    <div class="verset-box">
+      <div class="verset-guillemet">"</div>
+      <div class="verset-texte">Vous êtes la lumière du monde. Une ville située sur une montagne ne peut être cachée. Et on n'allume pas une lampe pour la mettre sous le boisseau&nbsp;; on la met sur le chandelier, et elle éclaire tous ceux qui sont dans la maison.</div>
+      <div class="verset-ref">— Matthieu 5, 14-15</div>
+      <div class="verset-meditation"><span style="font-style:normal; font-weight:600; color:var(--pourpre);">Pour la méditation&nbsp;:</span> En ce temps pascal, laissons la lumière du Christ rayonner à travers nos paroles et nos gestes du quotidien. Quelle «&nbsp;lumière&nbsp;» pouvez-vous apporter cette semaine dans votre entourage&nbsp;?</div>
+    </div>
+
+    <div class="ornement">
+      <div class="ornement-line"></div>
+      <div class="ornement-symbol">✠</div>
+      <div class="ornement-line"></div>
+    </div>
+
+    <!-- ABONNEMENT COMPACT -->
+    <div class="abonnement-section">
+      <div class="abonnement-grid">
+        <div>
+          <div class="abonnement-col-title">📱 Version numérique — Gratuite</div>
+          <div class="abonnement-texte">
+            Téléchargez <em>Le Lien des Causses</em> en PDF ou recevez-le par email.<br><br>
+            <strong>site :</strong> paroisse-sainte-emilie-causses.fr<br>
+            <strong>email :</strong> contact@paroisse-sainte-emilie-causses.fr
+          </div>
+        </div>
+        <div>
+          <div class="abonnement-col-title">✉️ Version papier — Abonnement postal</div>
+          <div class="abonnement-texte">Recevez <em>Le Lien des Causses</em> chez vous chaque mois. Frais d'impression et d'envoi uniquement.</div>
+          <div class="abonnement-prix">15 € <span>/ an · 10 numéros</span></div>
+          <div class="abonnement-texte">Chèque à l'ordre de&nbsp;: <strong>Paroisse Ste Émilie des Causses</strong></div>
+        </div>
+      </div>
+      <div class="coupon">
+        <div class="coupon-title">✂ — Coupon d'abonnement postal — ✂</div>
+        <div class="coupon-fields">
+          <div class="coupon-field"><div class="coupon-field-label">Nom &amp; Prénom</div>&nbsp;</div>
+          <div class="coupon-field"><div class="coupon-field-label">Téléphone</div>&nbsp;</div>
+          <div class="coupon-field" style="grid-column:1/-1;"><div class="coupon-field-label">Adresse postale complète</div>&nbsp;</div>
+          <div class="coupon-field" style="grid-column:1/-1;"><div class="coupon-field-label">Email (accusé de réception)</div>&nbsp;</div>
+        </div>
+        <div style="margin-top:12px; font-family:'Crimson Pro',serif; font-size:11.5px; color:#6A5840; text-align:center;">
+          À déposer à la sacristie ou envoyer à&nbsp;: Paroisse Sainte Émilie des Causses · Presbytère · Onet-le-Château (12850)
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="page-footer">
+    <div class="footer-parish">Paroisse Sainte Émilie des Causses · Onet-le-Château · Aveyron</div>
+    <div class="footer-page">— 5 —</div>
+    <div class="footer-website">paroisse-sainte-emilie-causses.fr</div>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════
      NOTE DE MAQUETTE
 ════════════════════════════════════════ -->
 <div class="note-maquette">
@@ -1415,10 +1699,4 @@
     Cette maquette de 4 pages représente la structure complète d'un numéro du <em>Lien des Causses</em>. 
     <strong>Les textes, noms et dates sont fictifs</strong> et devront être remplacés par les vraies informations de chaque mois.<br><br>
     <strong>Pour réaliser le magazine final :</strong> cette maquette HTML peut être imprimée directement en PDF depuis un navigateur (Fichier → Imprimer → Enregistrer en PDF · Format A4). 
-    Elle peut aussi servir de base de travail dans <strong>Canva</strong> (glisser-déposer des éléments visuels) ou dans <strong>Microsoft Publisher</strong>.<br><br>
-    <strong>Rubriques à alimenter chaque mois :</strong> édito Père Philippe · baptêmes/mariages/sépultures · résumé de chaque groupe · programme mensuel · 2 questions-réponses · 1 portrait.
-  </div>
-</div>
-
-</body>
-</html>
+    Elle peut aussi servir de base de travail dans <strong>Canva</strong> (glisser-déposer des éléments visuels) ou 
